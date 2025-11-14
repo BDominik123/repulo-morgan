@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet2Holiday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <div class="logo">
+        <img src="Jet2Holidays Logo valami.png" alt="jet2holiday_logo" title="jet2holiday_logo">
+        </div>
+        <form action="get">
+            <fieldset class="szemelyes">
+                <legend>Személyes adatok</legend>
+                <label for="vezeteknev">Vezetéknév</label>
+                <input type="text" name="nev" id="vezeteknevinput"><br>
+                <label for="keresztnevinput">Keresztnév</label>
+                <input type="text" name="nev" id="keresztnevinput"> <br>
+                <label for="emailinput">E-mail</label>
+                <input type="text" name="email" id="emailinput"><br>
+                <label for="telefoninput">Telefon</label>
+                <input type="text" name="telefon" id="telefoninput">
+            </fieldset>
+            <fieldset class="utazas">
+                <legend>Utazási információ</legend>
+                <label>Fizetési mód:</label>
+                <input type="radio" name="fizetes" id="fizetesutalas">
+                <label for="fizetesutalas">utalás</form><label>
+                <input type="radio" name="fizetes" id="fizeteskartya">
+                <label for="fizeteskartya">bankkártya</label>
+                <input type="text" name="" id=""> <br>
+                <label>Okmány azonosító</label>
+                <input type="text" name="okmany_ID" id="okmany_ID" size="15"><br>
+                <input type="radio" name="okmany_fajta" id="utlevel">
+                <label for="utlevel">Utalvány</label>
+                <input type="radio" name="okmany_fajta" id="szem_ig">
+                <label for="szem_ig">Személyi igazolvány</label><br>
+                <label>Honnan szeretne indulni?</label>
+                <input type="text" name="from" id="from"><br>
+                <label>Hova szeretne menni?</label>
+                <input type="text" name="to" id="to"><br>
+                <label for="indulasdatum">Mikor?</label>
+                <input type="date" name="indulas" id="indulasdatum"><br>
+                <label for="osztályokselect">osztály sorok</label>
+                <select name="osztályok" id="osztályokselect">
+                    <option value="1-5">1-5</option>
+                    <option value="6-10">6-10</option>
+                    <option value="11-15">11-15</option>
+                    <option value="16-20">16-20</option>
+                    <option value="21-25">21-25</option>
+                    <option value="26-">26-</option>
+                </select>
+
+            </fieldset>
+            <fieldset class="szolgaltatas">
+                <legend>Szolgáltatások</legend>
+                <input type="checkbox" name="etel" id="etel">
+                <label for="etel">Étkezés</label><br>
+                <input type="checkbox" name="ablak" id="ablak">
+                <label for="ablak">Ablak mellett</label><br>
+                <input type="checkbox" name="no" id="no">
+                <label for="no">Női utastárs</label><br>
+                <input type="checkbox" name="ferfi" id="ferfi">
+                <label for="ferfi">Férfi utastárs</label><br>
+                <input type="checkbox" name="lab" id="lab">
+                <label for="lab">Lábmasszázs</label>
+            </fieldset>
+            <input type="submit" value="Foglalás">
+            
+        </form>
+    </div>
+</body>
+</html>
