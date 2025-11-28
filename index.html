@@ -10,7 +10,7 @@
     
     <div id="container">
         <div class="logo">
-        <img src="Jet2Holidays Logo valami.png" alt="jet2holiday_logo" title="jet2holiday_logo">
+        <img src="gonoszjet.png" alt="jet2holiday_logo" title="jet2holiday_logo">
         </div>
         <form action="get">
             <fieldset class="szemelyes">
@@ -28,10 +28,10 @@
                 <legend>Utazási információ</legend>
                 <label>Fizetési mód:</label>
                 <input type="radio" name="fizetes" id="fizetesutalas">
-                <label for="fizetesutalas">utalás</form><label>
+                <label for="fizetesutalas">utalás<label>
                 <input type="radio" name="fizetes" id="fizeteskartya">
                 <label for="fizeteskartya">bankkártya</label>
-                <input type="text" name="" id=""> <br>
+                <input type="text" name="fizetes" id="fizetesi"> <br>
                 <label>Okmány azonosító</label>
                 <input type="text" name="okmany_ID" id="okmany_ID" size="15"><br>
                 <input type="radio" name="okmany_fajta" id="utlevel">
@@ -57,16 +57,25 @@
             </fieldset>
             <fieldset class="szolgaltatas">
                 <legend>Szolgáltatások</legend>
-                <input type="checkbox" name="etel" id="etel">
-                <label for="etel">Étkezés</label><br>
-                <input type="checkbox" name="ablak" id="ablak">
-                <label for="ablak">Ablak mellett</label><br>
-                <input type="checkbox" name="no" id="no">
-                <label for="no">Női utastárs</label><br>
-                <input type="checkbox" name="ferfi" id="ferfi">
-                <label for="ferfi">Férfi utastárs</label><br>
-                <input type="checkbox" name="lab" id="lab">
-                <label for="lab">Lábmasszázs</label>
+                <div>
+                    <input type="checkbox" name="etel" id="etel">
+                    <label for="etel">Étkezés</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ablak" id="ablak">
+                    <label for="ablak">Ablak mellett</label>
+                </div>
+                <div><input type="checkbox" name="no" id="no">
+                <label for="no">Női utastárs</label></div>
+                <div><input type="checkbox" name="ferfi" id="ferfi">
+                <label for="ferfi">Férfi utastárs</label></div>
+                <div><input type="checkbox" name="lab" id="lab">
+                <label for="lab">Lábmasszázs</label></div>
+                
+                
+                
+                
+                
             </fieldset>
             <input type="submit" value="Foglalás">
             

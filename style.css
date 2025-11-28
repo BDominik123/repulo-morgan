@@ -1,7 +1,8 @@
 *{
-    
+    font-style: italic;
     color: white;
-    font-family:Arial ;
+    font-family:"Comic sans MS" ;
+    font-weight: 700;
 }
 body{
     margin: 0px;
@@ -30,21 +31,36 @@ img{
     height: 60px;
 }
 fieldset{
-    max-width: 600px;
     margin:auto;
     padding: 20px;
-    background-color: rgba(49, 49, 49, 0.75) ;
+    max-width: 600px;
     display: grid;
-    grid-template-columns:100px 1fr 100px 1fr;
     align-content: start;
+    background-color: rgba(49, 49, 49, 0.75) ;
 }
 .szemelyes{
+    grid-template-columns:100px 1fr 100px 1fr;
     gap: 10px;
 }
-#vezeteknevinput{
-
+.utazas{
+    grid-template-columns:100px 1fr 100px 1fr;
+}
+.szolgaltatas{
+    display: flex;
+    justify-content: space-between;
 }
 input[type="text"]{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     max-width: 200px;
+    color: white;
+    opacity: 0.7;
+}
+input[type="submit"]{
+    margin-top: 20px;
+    background-color: rgb(62, 169, 211);
+    height: clamp(30px, 40px, 750px);
+    width: 100px;
+    font-size: clamp(0.75rem, 1.2rem, 2rem);
+    
+    
 }
